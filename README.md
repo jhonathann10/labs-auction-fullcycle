@@ -36,3 +36,8 @@ curl --location 'http://localhost:8080/auction?status=0' \
 curl --location 'http://localhost:8080/auction?status=1' \
 --header 'Content-Type: application/json'
 ```
+
+5- O teste unitário da função de fechamento do leilão pode ser executado com o comando:
+```bash
+make test
+```
