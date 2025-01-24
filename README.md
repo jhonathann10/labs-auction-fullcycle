@@ -8,6 +8,12 @@ Objetivo: Adicionar uma nova funcionalidade ao projeto já existente para o leil
 - Um teste para validar se o fechamento está acontecendo de forma automatizada;
 
 ## Como executar
+Obs: O pessoal da FullCycle comentou que tivemos esse erro.
+![img.png](assets/img.png)
+
+- Melhorei o comando `make build` para tentar evitar conflitos de container.
+- O body que passei estava com menos caracteres que o esperado, então adicionei mais caracteres para tentar evitar o erro.
+
 ```bash
 make build
 ```
@@ -22,7 +28,7 @@ curl --location 'localhost:8080/auction' \
 --data '{
     "product_name": "Fusca",
     "category": "Carro",
-    "description": "Fusca 1980",
+    "description": "VW fusca 1980",
     "condition": 0
 }'
 ```
